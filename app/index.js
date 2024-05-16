@@ -5,7 +5,7 @@ const GetFiles = require('./lib/GetFiles')
 const path = require('path')
 const fs = require('fs')
 
-import { removeBackground, Config} from "@imgly/background-removal-node"
+const { removeBackground, Config} = require("@imgly/background-removal-node")
 
 // convert a.tif -thumbnail 64x64^ -gravity center -extent 64x64 b.ico
 
