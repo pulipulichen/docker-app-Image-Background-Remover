@@ -5,7 +5,7 @@ A tool to remove background from image.
 
 - Linux & MacOS: https://pulipulichen.github.io/docker-app-Image-Cropper/bin/background-remover.sh
 - Windows: https://pulipulichen.github.io/docker-app-Image-Cropper/bin/image-cropper.exe
-- Colab: https://colab.research.google.com/drive/1VX_ttV7iu3HP7ao41PajrNBf5rEgFQly?usp=sharing
+- Colab: https://colab.research.google.com/drive/1OYK2sWRUGR_VWer87YfjlHHaOY8m-zW4?usp=sharing
 
 # How to run bash in Linux and MacOS? 
 
