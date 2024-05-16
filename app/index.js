@@ -5,6 +5,8 @@ const GetFiles = require('./lib/GetFiles')
 const path = require('path')
 const fs = require('fs')
 
+import { removeBackground, Config} from "@imgly/background-removal-node"
+
 // convert a.tif -thumbnail 64x64^ -gravity center -extent 64x64 b.ico
 
 let main = async function () {
@@ -37,27 +39,27 @@ let main = async function () {
     // await ShellExec(`convert "${file}" -transparent white -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped.' +ext)}"`)
 
     // let channels = await ShellExec(`identify -format '%[channels]' "${file}"`)
-    let channels = '0'
-    if (isJPG === false) {
-      channels = await ShellExec(`convert "${file}" -channel a -separate -format "%[fx:mean]" info:`)
-    }
-    else {
-      channels = '1'
-    }
+    // let channels = '0'
+    // if (isJPG === false) {
+    //   channels = await ShellExec(`convert "${file}" -channel a -separate -format "%[fx:mean]" info:`)
+    // }
+    // else {
+    //   channels = '1'
+    // }
       
 
     // fs.writeFileSync(file + '-channels.txt', channels, 'utf8')
     // if (channels.indexOf('a') > -1) {
     dirname = '/output/'
-    if (channels !== '1') {
-      // await ShellExec(`convert "${file}" -alpha set -bordercolor transparent -border 1 -fill none -fuzz 3% -draw "color 0,0 floodfill" -shave 1x1 -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
-      console.log(`convert "${file}" -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
-      await ShellExec(`convert "${file}" -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
-    }
-    else {
-      await ShellExec(`convert "${file}" -alpha set -bordercolor white -border 1 -fill none -fuzz 2% -draw "color 0,0 floodfill" -shave 1x1 -fuzz 5% -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
-    }
+    
+    // console.log(`convert "${file}" -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
+    // await ShellExec(`convert "${file}" -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
+    
     // convert -gravity center "c.png" -flatten -fuzz 1% -trim +repage -resize 64x64 -extent 64x64 "b.ico"
+    let blob = await removeBackground(file)
+    // const base64 = URL.createObjectURL(blob);
+
+    fs.writeFileSync(path.resolve(dirname, filenameNoExt + '-remove-bg' +ext), blob)
   }
 }
 

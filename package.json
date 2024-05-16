@@ -1,5 +1,5 @@
 {
-  "name": "docker-app-Image-Cropper",
+  "name": "docker-app-Image-Background-Remover",
   "version": "1.0.0",
   "description": "Crop an image.",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/docker-app-Image-Cropper.git"
+    "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/docker-app-Image-Background-Remover.git"
   },
   "keywords": [
     "PWA"
@@ -20,9 +20,10 @@
   "author": "Pulipuli Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pulipulichen/docker-app-Image-Cropper/issues"
+    "url": "https://github.com/pulipulichen/docker-app-Image-Background-Remover/issues"
   },
-  "homepage": "https://github.com/pulipulichen/docker-app-Image-Cropper#readme",
+  "homepage": "https://github.com/pulipulichen/docker-app-Image-Background-Remover#readme",
   "dependencies": {
+    "@imgly/background-removal-node": "1.4.5"
   }
 }

@@ -12,8 +12,8 @@ RUN apt-get install -y \
 # RUN apt-get install -y \
 #     imagemagick
 
-# # COPY package.json /
-# # RUN npm install
+COPY package.json /
+RUN npm install
 
 # CMD ["bash"]
 
