@@ -12,8 +12,10 @@ RUN apt-get install -y \
 # RUN apt-get install -y \
 #     imagemagick
 
-COPY package.json /
-RUN npm install
+RUN npm link @imgly/background-removal-node@1.4.5
+
+# COPY package.json /
+# RUN npm install
 
 # CMD ["bash"]
 
