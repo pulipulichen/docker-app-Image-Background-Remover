@@ -1,5 +1,9 @@
 #!/bin/bash
 
+node docker-build/update-citation.js
+
+# =================================================================
+
 new_version=$(date '+%Y%m%d.%H%M%S')
 
 git tag $new_version
