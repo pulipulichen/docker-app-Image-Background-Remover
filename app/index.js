@@ -3,7 +3,7 @@ const ShellExec = require('./lib/ShellExec')
 const GetFiles = require('./lib/GetFiles')
 
 const path = require('path')
-// const fs = require('fs')
+// conrest fs = require('fs')
 
 // convert a.tif -thumbnail 64x64^ -gravity center -extent 64x64 b.ico
 
@@ -51,7 +51,8 @@ let main = async function () {
     dirname = '/output/'
     
     // console.log(`convert "${file}" -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
-    await ShellExec(`rembg i "${file}" "${path.resolve(dirname, filenameNoExt + '-remove-bg' +ext)}"`)
+    // await ShellExec(`rembg i "${file}" "${path.resolve(dirname, filenameNoExt + '-remove-bg' +ext)}"`)
+    await ShellExec(`/usr/local/bin/rembg i "${file}" "${path.resolve(dirname, filenameNoExt + '-remove-bg' +ext)}"`)
     
     // convert -gravity center "c.png" -flatten -fuzz 1% -trim +repage -resize 64x64 -extent 64x64 "b.ico"
     // let blob = await removeBackground(file)
