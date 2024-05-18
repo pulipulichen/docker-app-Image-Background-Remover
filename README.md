@@ -1,6 +1,7 @@
 # docker-app-Image-Background-Remover
 
 A tool to remove backgrounds and transparent margins from images.
+
 用來幫圖片移除背景和去除空白邊緣的工具。
 
 ![](https://blogger.googleusercontent.com/img/a/AVvXsEj-RMQjfPWk-k53RhBjFJj_A5R33nLRu_E3x99o8llJKgjQlAQ8g5c9OdMsbRkK1Us6_U0_1yGmguOYgZFhOxMljOy3LBZQL2u-INS414hf-UVVhQEE_YiP0Ep4lVKiz9hGgBXM-JSpkAm8EGezsTl3OHn1qOn0LJYZppORLmNqjzuEt7aFuiKqFA)
@@ -31,6 +32,6 @@ A tool to remove backgrounds and transparent margins from images.
 
 ----
 
-# Document
+# Documents
 
-Cover https://docs.google.com/presentation/d/18vJSo8d7EWFf2IUPJGJkrFC8Zt1SJGvFjdAJANqqAp4/edit?usp=sharing
+Cover: https://docs.google.com/presentation/d/18vJSo8d7EWFf2IUPJGJkrFC8Zt1SJGvFjdAJANqqAp4/edit?usp=sharing

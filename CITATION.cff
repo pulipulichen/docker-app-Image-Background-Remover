@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+authors:
+  - family-names: Chen
+    given-names: Yung-Ting
+    orcid: https://orcid.org/0000-0003-3751-610X
+title: "docker-app-Image-Background-Remover"
+abstract: "A tool to remove backgrounds and transparent margins from images."
+version: 1.0.0
+date-released: 2024-05-18
+license: "The MIT License (MIT)"
+repository-code: "https://github.com/pulipulichen/docker-app-Image-Background-Remover"

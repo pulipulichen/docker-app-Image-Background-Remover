@@ -1,7 +1,7 @@
 {
   "name": "docker-app-Image-Background-Remover",
   "version": "1.0.0",
-  "description": "Crop an image.",
+  "description": "A tool to remove backgrounds and transparent margins from images.",
   "main": "index.js",
   "scripts": {
     "start": "docker-compose up --build",
