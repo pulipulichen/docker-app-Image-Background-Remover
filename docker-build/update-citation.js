@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const package_info = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json', 'utf-8')).toString())
+const package_info = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json'), 'utf-8').toString())
 
 const author_name = package_info.author.name
 const family_name = author_name.slice(author_name.lastIndexOf(' ') + 1)
@@ -27,4 +27,4 @@ identifiers:
   - type: doi
     value: ${package_info.doi}`
 
-fs.writeFileSync(path.resolve(__dirname, '../CITATION.cff', citation_cff_yaml, 'utf-8'))
+fs.writeFileSync(path.resolve(__dirname, '../CITATION.cff'), citation_cff_yaml, 'utf-8')
