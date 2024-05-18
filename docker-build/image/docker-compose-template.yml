@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    image: pudding/docker-app:docker-app-Image-Cropper-20240517.022557
+    image: pudding/docker-app:docker-app-Image-Cropper-20240518.132604
     tty: true
     command: node /app/index.js "/input/__INPUT__"
     environment:

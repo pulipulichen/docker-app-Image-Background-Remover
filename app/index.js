@@ -53,13 +53,13 @@ let main = async function () {
     dirname = '/output/'
     
     // console.log(`convert "${file}" -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
-    // await ShellExec(`convert "${file}" -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
+    await ShellExec(`rembg i "${file}" "${path.resolve(dirname, filenameNoExt + '-remove-bg' +ext)}"`)
     
     // convert -gravity center "c.png" -flatten -fuzz 1% -trim +repage -resize 64x64 -extent 64x64 "b.ico"
-    let blob = await removeBackground(file)
+    // let blob = await removeBackground(file)
     // const base64 = URL.createObjectURL(blob);
 
-    fs.writeFileSync(path.resolve(dirname, filenameNoExt + '-remove-bg' +ext), blob)
+    // fs.writeFileSync(path.resolve(dirname, filenameNoExt + '-remove-bg' +ext), blob)
   }
 }
 
