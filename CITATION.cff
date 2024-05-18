@@ -4,7 +4,9 @@ authors:
   - family-names: Chen
     given-names: Yung-Ting
     orcid: https://orcid.org/0000-0003-3751-610X
+    email: blog@pulipuli.info
 title: "docker-app-Image-Background-Remover"
+license: "MIT"
 repository-code: "https://github.com/pulipulichen/docker-app-Image-Background-Remover"
 abstract: "A tool to remove backgrounds and transparent margins from images."
 identifiers:
