@@ -1,9 +1,9 @@
-// const ShellSpawn = require('./lib/ShellSpawn')
-const ShellExec = require('./lib/ShellExec')
+const ShellSpawn = require('./lib/ShellSpawn')
+// const ShellExec = require('./lib/ShellExec')
 const GetFiles = require('./lib/GetFiles')
 
 const path = require('path')
-// conrest fs = require('fs')
+conrest fs = require('fs')
 
 // convert a.tif -thumbnail 64x64^ -gravity center -extent 64x64 b.ico
 
@@ -52,7 +52,12 @@ let main = async function () {
     
     // console.log(`convert "${file}" -trim +repage "${path.resolve(dirname, filenameNoExt + '-cropped' +ext)}"`)
     // await ShellExec(`rembg i "${file}" "${path.resolve(dirname, filenameNoExt + '-remove-bg' +ext)}"`)
-    await ShellExec(`/usr/local/bin/rembg i "${file}" "${path.resolve(dirname, filenameNoExt + '-remove-bg' +ext)}"`)
+    let output1 = path.resolve(dirname, filenameNoExt + '-remove-bg-tmp' +ext)
+    let output2 = path.resolve(dirname, filenameNoExt + '-remove-bg' +ext)
+    await ShellSpawn(`rembg i "${file}" "${output1}"`)
+    await ShellExec(`convert "${output1}" -alpha set -bordercolor white -border 1 -fill none -fuzz 2% -draw "color 0,0 floodfill" -shave 1x1 -fuzz 5% -trim +repage "${output2}"`)
+
+    fs.unlinkSync(output1)
     
     // convert -gravity center "c.png" -flatten -fuzz 1% -trim +repage -resize 64x64 -extent 64x64 "b.ico"
     // let blob = await removeBackground(file)
