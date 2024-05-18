@@ -9,9 +9,9 @@ A tool to remove backgrounds and transparent margins from images.
 
 # Key technologies
 
-- Rembg: A Python module to remove backgrounds from images based on AI models.
-- ImageMagick: Trim the margin of the image.
-- Node.js and Python: File processing.
+- **Rembg**: A Python module to remove backgrounds from images based on AI models.
+- **ImageMagick**: Trim the margin of the image.
+- **Node.js and Python**: File processing.
 
 # Citation
 
