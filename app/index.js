@@ -3,7 +3,7 @@ const ShellSpawn = require('./lib/ShellSpawn')
 const GetFiles = require('./lib/GetFiles')
 
 const path = require('path')
-conrest fs = require('fs')
+const fs = require('fs')
 
 // convert a.tif -thumbnail 64x64^ -gravity center -extent 64x64 b.ico
 
