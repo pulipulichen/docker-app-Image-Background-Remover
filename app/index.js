@@ -55,7 +55,7 @@ let main = async function () {
     let output1 = path.resolve(dirname, filenameNoExt + '-remove-bg-tmp' +ext)
     let output2 = path.resolve(dirname, filenameNoExt + '-remove-bg' +ext)
     await ShellSpawn(`rembg i "${file}" "${output1}"`)
-    await ShellExec(`convert "${output1}" -alpha set -bordercolor white -border 1 -fill none -fuzz 2% -draw "color 0,0 floodfill" -shave 1x1 -fuzz 5% -trim +repage "${output2}"`)
+    await ShellSpawn(`convert "${output1}" -alpha set -bordercolor white -border 1 -fill none -fuzz 2% -draw "color 0,0 floodfill" -shave 1x1 -fuzz 5% -trim +repage "${output2}"`)
 
     fs.unlinkSync(output1)
     
