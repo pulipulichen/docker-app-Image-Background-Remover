@@ -34,6 +34,9 @@
   },
   "homepage": "https://github.com/pulipulichen/docker-app-Image-Background-Remover#readme",
   "doi": "10.5281/zenodo.11213088",
+  "CITATION.cff": {
+    
+  },
   "dependencies": {
     "@imgly/background-removal-node": "1.4.5"
   }

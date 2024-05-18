@@ -12,3 +12,8 @@ abstract: "A tool to remove backgrounds and transparent margins from images."
 identifiers:
   - type: doi
     value: 10.5281/zenodo.11213088
+references:
+  - type: web
+    title: "布丁布丁吃什麼？"
+    url: "https://blog.pulipuli.info"
+    note: "我不是在實驗室，就是在前往實驗室的路上。"
