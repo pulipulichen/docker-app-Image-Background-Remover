@@ -15,7 +15,7 @@ A tool to remove backgrounds and transparent margins from images.
 
 # Citation
 
-
+Chen, Y.-T. (2024). *Docker-app-Image-Background-Remover* (20240518.145101) [Computer software]. Zenodo. [https://doi.org/10.5281/ZENODO.11213087](https://doi.org/10.5281/ZENODO.11213087)
 
 ----
 
