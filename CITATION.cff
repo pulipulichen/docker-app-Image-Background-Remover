@@ -8,3 +8,6 @@ title: "docker-app-Image-Background-Remover"
 version: 1.0.0
 date-released: 2024-05-18
 repository-code: "https://github.com/pulipulichen/docker-app-Image-Background-Remover"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.11213088
