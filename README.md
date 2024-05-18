@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/801418875.svg)](https://zenodo.org/doi/10.5281/zenodo.11213087)
+
 # docker-app-Image-Background-Remover
 
 A tool to remove backgrounds and transparent margins from images.
