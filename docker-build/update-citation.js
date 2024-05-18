@@ -12,7 +12,7 @@ if (repository_code.indexOf('#') > -1) {
   repository_code = repository_code.slice(0, repository_code.indexOf('#'))
 }
 
-const citation_cff_yaml = `cff-version: 1.2.0
+let citation_cff_yaml = `cff-version: 1.2.0
 message: "If you use this software, please cite it using these metadata."
 authors:
   - family-names: ${family_name}
@@ -22,9 +22,13 @@ authors:
 title: "${package_info.name}"
 license: "${package_info.license}"
 repository-code: "${repository_code}"
-abstract: "${package_info.description}"
+abstract: "${package_info.description}"`
+
+if (package_info.doi) {
+  citation_cff_yaml = citation_cff_yaml + `
 identifiers:
   - type: doi
     value: ${package_info.doi}`
+}
 
 fs.writeFileSync(path.resolve(__dirname, '../CITATION.cff'), citation_cff_yaml, 'utf-8')
