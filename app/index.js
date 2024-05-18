@@ -1,11 +1,9 @@
-const ShellSpawn = require('./lib/ShellSpawn')
+// const ShellSpawn = require('./lib/ShellSpawn')
 const ShellExec = require('./lib/ShellExec')
 const GetFiles = require('./lib/GetFiles')
 
 const path = require('path')
-const fs = require('fs')
-
-const { removeBackground, Config} = require("@imgly/background-removal-node")
+// const fs = require('fs')
 
 // convert a.tif -thumbnail 64x64^ -gravity center -extent 64x64 b.ico
 
