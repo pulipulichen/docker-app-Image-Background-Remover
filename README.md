@@ -1,5 +1,6 @@
 [![DOI](https://zenodo.org/badge/801418875.svg)](https://zenodo.org/doi/10.5281/zenodo.11213087)
-# docker-app-Image-Background-Remover
+
+# docker-app-Image-Background-Remover: 移除圖片背景
 
 A tool to remove backgrounds and transparent margins from images.
 
@@ -7,7 +8,7 @@ A tool to remove backgrounds and transparent margins from images.
 
 ![](https://blogger.googleusercontent.com/img/a/AVvXsEj-RMQjfPWk-k53RhBjFJj_A5R33nLRu_E3x99o8llJKgjQlAQ8g5c9OdMsbRkK1Us6_U0_1yGmguOYgZFhOxMljOy3LBZQL2u-INS414hf-UVVhQEE_YiP0Ep4lVKiz9hGgBXM-JSpkAm8EGezsTl3OHn1qOn0LJYZppORLmNqjzuEt7aFuiKqFA)
 
-# Key technologies
+# Techniques
 
 - **Rembg**: A Python module to remove backgrounds from images based on AI models.
 - **ImageMagick**: Trim the margin of the image.
